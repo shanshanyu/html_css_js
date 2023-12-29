@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="age">
+        <span v-if="age<35">年轻人</span>
+        <span v-else-if="age>=35&&age<=45">中年人</span>
+        <span v-else>老年人</span>
+    </div>
+    
+</body>
+<script>
+    new new Vue({
+        el:"#app",
+        data:{
+            age:30
+        }
+    })
+</script>
+</html>

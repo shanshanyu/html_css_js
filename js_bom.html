@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// bom  浏览器对象模型,允许 js 与浏览器对话,js将浏览器的各个组成部分封装成对象.
+// window   screen  location   history   navigator
+// window:浏览器窗口对象
+// navigator:浏览器对象  (浏览器的版本\内核等)
+// screen:屏幕对象
+// history:历史记录对象
+// location:地址栏对象
+
+// window对象获取: 直接使用window
+// window可以省略. window.alert("hello window"); 可以写成 alert("hello window");
+// 属性:  history:对history对象的只读引用. location:窗口框架的location对象.   navigator:对navigator对象的只读引用.
+// 方法: alert()   confirm():带确认和取消按钮的对话框    setInterval():按照指定的周期来调用函数或计算表达式  setTimeout:到时间后调用函数或计算表达式
+var i = 3;
+setInterval(function(){console.log(i)},2000);
+</script>
+</html>

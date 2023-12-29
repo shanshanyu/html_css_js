@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// json定义： var xx = '{"Key1":value1,"key2":value2}'   
+// key 必须用双引号包括，value的类型可以是：数字  字符串(在双引号中)  布尔值  数组(用方括号)  对象(用花括号)  null
+
+// json字符串转换成 js对象:  var jsObj = JSON.parse(str);
+// json对象准换成 js 字符串:  var jsStr = JSON.stringify(jsObj);
+
+// 自定义对象
+var obj = {
+    a:1,
+    b:2,
+    c:function(e){
+        console.log(e);
+    }
+}
+
+console.log(obj.a);
+obj.c(1234);
+
+
+
+
+</script>
+</html>

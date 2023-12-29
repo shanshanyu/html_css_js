@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form test</title>
+</head>
+<body>
+<!-- 以 get 方式请求，会在url后面拼接表单数据， ?username=xx&age=xx  url长度有限。 所以无法提交大的表单。get是method的默认值 -->
+<!-- post请求时，表单数据在请求体中。payload中，表单数据大小无限制 -->
+
+<!-- 表单项主要有3种：input  select  textarea -->
+    <form action="" method="post">
+        <p>姓名<input type="text" name="username"></p>
+        <p>年龄<input type="text" name="age"></p>
+        <p>密码<input type="password" name="pass"></p>
+        <input type="submit" value="submit1">
+    </form>
+    
+    
+</body>
+</html>

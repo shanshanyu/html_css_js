@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/1.jpg" id="img1">
+    <br>
+    <input type="button" value="图片2" id="b2">
+    <input type="button" value="图片1" id="b1">
+    <br>
+    <input type="text" placeholder="test" id="text1">
+    <br>
+    <input type="checkbox" class="box"> 电影
+    <input type="checkbox" class="box"> 旅游
+    <input type="checkbox" class="box"> 游戏
+    <br>
+    <input type="button" value="全选" id="all">
+    <input type="button" value="反选" id="not">
+</body>
+<script>
+    document.getElementById("b2").onclick = function(){
+        document.getElementById("img1").src = "img/2.jpg";
+    }
+    document.getElementById("b1").onclick  = function(){
+        document.getElementById("img1").src = "img/1.jpg";
+    } 
+
+    document.getElementById("text1").placeholder = "TEST";
+
+    document.getElementById("all").onclick = function(){
+        var boxs = document.getElementsByClassName("box");
+        for (let index = 0; index < boxs.length; index++) {
+            const element = boxs[index];
+            element.checked = true;
+        }
+    }
+
+    document.getElementById("not").onclick = function(){
+        var boxs = document.getElementsByClassName("box");
+        for (let index = 0; index < boxs.length; index++) {
+            const element = boxs[index];
+            element.checked = false;
+        }
+    }
+    
+</script>
+</html>

@@ -1,0 +1,51 @@
+/* css选择器有三种：元素选择器   id选择器  类选择器 */
+
+/* css盒子模型：页面里面所有的元素，都可以看作一个盒子。  包括：内容（content)  内边距(padding)  边框(border)  外边距(margin) */
+
+/* 完成盒子模型可以借助 div  span，这两个标签都没有语义 */
+
+/* div标签：  一行一个    宽度默认是 */
+
+h1{
+    /* color:red; */
+    /* color: rgb(255, 0, 0); */
+    /* color: #ff0000; */
+    color: #3F3F3F;
+
+    
+
+}
+
+/* 类选择器 */
+.cls{
+    color: red;
+}
+
+#china{
+    color: blue;
+    font-size: 20px;
+}
+
+
+/* 去除a标签的下划线 */
+a{
+    color: black;
+    text-decoration: none;  
+}
+
+/* 首行缩进 */
+p{
+    text-indent: 20px;
+    height: 30px;
+}
+
+#plast{
+    text-align: right;
+}
+
+/* margin顺序：上  右  下  左 */
+#center{
+    width: 65%;
+    /* margin: 0 17% 0 17%; */
+    margin: 0 auto;
+}

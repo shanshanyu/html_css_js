@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center" id="tb1">课程表</div>
+        <table border="1px" cellspacing="0px" width="800px" id="tb1" font-size="50px">
+            <!-- 表头 -->
+            <tr style="text-align: center;">
+                <th>学号</th>
+                <th>姓名</th>
+                <th>分数</th>
+                <th>评语</th>
+            </tr>
+            <tr style="text-align: center;">
+                <td>001</td>
+                <td>张三</td>
+                <td>92</td>
+                <td>优秀</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>002</td>
+                <td>李四</td>
+                <td>91</td>
+                <td>优秀</td>
+            </tr>
+        </table>
+    
+    <div style="text-align: center;">
+        <input id="b1" type="button" type="button" value="改变标题内容" onclick="f1()">
+        <input id="b2" type="button" type="button" value="改变标题颜色" onclick="f2()">
+        <input id="b3" type="button" type="button" value="删除最后一个" onclick="f3()">
+    </div>
+    
+</body>
+<script>
+// dom:文档对象模型   
+// 将标记语言的各个组成部分封装成对应的对象:
+// document  整个文档对象
+// element  元素对象
+// attribute  属性对象
+// text   文本对象
+// comment   注释对象
+
+// js通过dom,就能够对html进行操作:
+// 改变html元素的内容,改变html元素的样式,对html dom事件作出反应,添加和删除html元素
+
+// dom是w3c的标准,定义了访问html和xml文档的标准,分为3个不同的部分:
+// core dom:所有文档类型的标准类型  document  element  attribute  text  comment
+// xml dom:xml文档的标准模型
+// html dom:html文档的标准类型
+
+// html中的元素对象可以通过document对象获取,而document对象可以通过window对象获取.
+// 根据id属性,标签名称,name属性,class属性获取element对象.
+// 根据id返回单个element对象,根据名称,name属性,class属性返回的都是对象数组
+
+function f1(){
+    document.getElementById("tb1").innerHTML="学院成绩表";
+}
+function f2(){
+    document.getElementById("tb1").style="text-align: center;color:red"
+}
+
+
+</script>
+</html>

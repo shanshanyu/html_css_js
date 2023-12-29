@@ -1,0 +1,42 @@
+前后端分离开发：
+
+
+原型+需求（pm）->接口文档
+前端和后端按照接口文档开发
+
+
+需求分析-> 接口定义（API接口文档）->前后端并行开发(遵守规范)->测试(前端、后端)->前后端联调测试
+
+接口文档管理平台：YAPI
+
+有以下功能：
+api接口管理
+mock服务
+
+
+
+yapi：
+添加项目
+添加分类
+添加接口
+
+
+前端工程化：
+环境准备：   vue脚手架   vue-cli是vue官方提供的脚手架
+  vue-cli提供了如下功能：
+  统一的目录结构
+  本地调试
+  热部署
+  单元测试
+  集成打包上线
+
+依赖环境NodeJS
+npm安装完成后，设置prefix: npm config set prefix "D:/xx"
+设置淘宝镜像： npm config set registry "https://registry.npm.taobao.org"
+安装vue脚手架：npm install -g @vue/cli
+
+
+vue项目创建：
+命令行：vue create vue-project01
+图形化界面：vue ui
+

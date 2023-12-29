@@ -1,0 +1,46 @@
+<!-- 布局标签：实际网页开发中，经常使用 span 和 div这两个没有语义的布局标签 -->
+<!-- div 的特点：一行显示一个    宽度默认是父元素的高度，高度由内容撑开   可以设置宽高-->
+<!-- span 的特点：一行可以显示多个  宽高默认由内容撑开  不可以设置宽高 -->
+<!-- 文档类型为html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焦点访谈</title>
+    <!-- 标签样式有3种：行内、内嵌、外联 -->
+    <!-- <style>
+        h1{
+            color:red;
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+    <div id="center">
+    <img src="./img/news_logo.png" height="100%" >
+    <h1>焦点访谈</h1>
+    <hr>
+    <p><span class="cls">2023-11-25</span><span id="china">央视网</span></p>
+    <a href="https://www.baidu.com" target="_self">百度一下</a>
+    <hr>
+
+
+    <!-- 视频 -->
+    <!-- 如果 key value 相同，可以省略value -->
+    <video src="./video/1.mp4" controls="controls" width="950px"></video>
+
+    <!-- 音频 -->
+    <audio src="./audio/1.mp3" controls></audio>
+
+    <p><b>春去</b></p>
+    <p>秋来</p>
+
+    <img src="./img/1.jpg">
+    <p>春种夏收</p>
+    <img src="./img/10.jpg" alt="">
+    <p id="plast">责任编辑：yss</p>
+    </div>
+</body>
+</html>

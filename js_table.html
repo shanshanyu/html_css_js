@@ -1,0 +1,91 @@
+<!-- var定义的变量是全局变量 -->
+<!-- ecmascript6 新增 let 关键字，定义的变量只在let代码块内有效 -->
+<!-- ecmascript6 新增const 关键字，声明常量 -->
+<!-- js中数据类型分为：原始类型和引用类型，原始类型包括：number   string   boolean   null   undefined -->
+<!-- 字符串单双引号都可以 -->
+
+<!-- 使用typeof 运算符可以获取数据类型 -->
+<!-- typeof null 是 object -->
+<!-- 字符串转换成数字：将字符串字面值转换成数字，如果字面值不是数字，则转换成NaN -->
+<!-- 其他类型转换成boolean：0 和 NaN 为false，其他为 true。  string：空字符串为false，其他为true。  Null和undefined：均为false -->
+
+
+<!-- 函数：定义 
+      function  xx(参数1,参数2){
+        代码;
+      }
+      形参不需要类型，返回值不需要类型
+      调用： 函数名称(实参列表)
+-->
+
+<!-- 
+    函数：定义方式2
+    var xx = function(参数1,参数2){
+        代码;
+    }
+
+ -->
+
+ <!-- 
+    js对象：Array   String   JSON   BOM  DOM
+
+    Array：定义
+    var xx = new Array(1,2,3,4);
+    var xx = [1,2,3,4];
+    Array属性：length
+    Array方法：forEach  push  splice
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js table</title>
+</head>
+<body>
+    <!-- 用 js 打印一个 table -->
+    
+</body>
+<script>
+    var i = 0;
+    var j = 0;
+    document.write('<table border="1px" cellspacing="0px">');
+    for(i = 0; i < 4; i++){
+        document.write('<tr>')
+        for(j = 0; j < 4; j++){
+            document.write('<td> $',i*j,'</td>');
+        }
+        document.write('</tr>')
+    }
+    document.write('</table>');
+    
+    a = null;
+    alert(typeof a);  
+    // typeof a 是 object
+    alert(parseInt("10")); 
+    // parseInt 用来把字符串转换成数字，转换失败时：NaN
+      
+
+    b = new Array(1,2,3,4);
+    for (let i = 0; i < b.length; i++) {
+        console.log(b[i]);
+        
+    }
+
+    b.forEach(function(e){
+        console.log(e);
+    });
+
+    // ES6 箭头函数： (...)=> {...}  简化函数
+    // 如果要给箭头函数起名字： var xx = (..)=>{...}
+    b.forEach((e)=>{
+        console.log(e);
+    }
+    );
+
+    b.push('a','b','c');
+    console.log(b);
+
+</script>
+</html>
